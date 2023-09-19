@@ -41,3 +41,6 @@ export const OKP4TestnetChain = {
         coinType: 118,
     },
 };
+
+export const LAWSTONE_CODE_ID = 5;
+export const COGNITARIUM_CODE_ID = 7;

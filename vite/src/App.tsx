@@ -1,10 +1,19 @@
 import { configureGraz } from "graz";
 
-import { Balance, Connection } from "./components";
+import {
+    Balance,
+    Connection,
+    InstantiateCognitarium,
+    InstantiateLawStone,
+} from "./components";
 
 import "./App.css";
 
-import { OKP4TestnetChain } from "./constants";
+import {
+    COGNITARIUM_CODE_ID,
+    LAWSTONE_CODE_ID,
+    OKP4TestnetChain,
+} from "./constants";
 
 configureGraz({
     defaultChain: OKP4TestnetChain,
@@ -17,6 +26,8 @@ function App() {
 
             <Connection chainInfo={OKP4TestnetChain} />
             <Balance></Balance>
+            <InstantiateCognitarium codeId={COGNITARIUM_CODE_ID} />
+            <InstantiateLawStone codeId={LAWSTONE_CODE_ID} />
         </>
     );
 }
