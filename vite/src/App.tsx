@@ -1,35 +1,36 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import "./App.css";
+import { configureGraz, useActiveChain } from "graz";
+
+configureGraz({
+    defaultChain: {
+        chainId: "okp4-nemeton-1",
+        gas: {
+            price: "10000000",
+            denom: "uknow",
+        },
+        currencies: [
+            {
+                coinDenom: "know",
+                coinMinimalDenom: "uknow",
+                coinDecimals: 6,
+                coinGeckoId: "OKP4 nemeton",
+                coinImageUrl:
+                    "https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/okp4testnet/images/okp4.png",
+            },
+        ],
+        rpc: "https://api.testnet.okp4.network:443/rpc",
+        rest: "https://api.testnet.okp4.network:443/",
+    },
+});
 
 function App() {
-  const [count, setCount] = useState(0)
+    const activeChain = useActiveChain();
 
-  return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    return (
+        <div>
+            <span>Connected to {activeChain?.chainId}</span>
+        </div>
+    );
 }
 
-export default App
+export default App;
