@@ -1,6 +1,6 @@
 import { configureGraz } from "graz";
 
-import { Connection } from "./components";
+import { Balance, Connection } from "./components";
 
 import "./App.css";
 
@@ -16,6 +16,7 @@ function App() {
             <h1>OKP4 Vite Starter</h1>
 
             <Connection chainInfo={OKP4TestnetChain} />
+            <Balance></Balance>
         </>
     );
 }
