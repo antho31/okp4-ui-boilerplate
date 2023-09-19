@@ -5,6 +5,9 @@ import { ExecuteCognitarium } from "./ExecuteCognitarium";
 import { Instantiate } from "./Instantiate";
 import { InstantiateCognitarium } from "./InstantiateCognitarium";
 import { InstantiateLawStone } from "./InstantiateLawStone";
+import { Query } from "./Query";
+import { QueryCognitarium } from "./QueryCognitarium";
+import { QueryLawStone } from "./QueryLawStone";
 
 export {
     Balance,
@@ -14,4 +17,7 @@ export {
     Instantiate,
     InstantiateCognitarium,
     InstantiateLawStone,
+    Query,
+    QueryCognitarium,
+    QueryLawStone,
 };
