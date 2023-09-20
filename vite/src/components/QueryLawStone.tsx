@@ -7,7 +7,7 @@ import {
     Term,
 } from "@okp4/law-stone-schema";
 
-import { Query } from "./Query";
+import { QueryModal } from "./Query";
 
 function onQueryResult(data: Record<string, unknown> | undefined) {
     if (!data) return <></>;
@@ -56,11 +56,11 @@ export function QueryLawStone({
     const query: Ask = { ask };
 
     return (
-        <Query
+        <QueryModal
             contractAddress={contractAddress}
             query={query}
             onQueryResult={onQueryResult}
             textButton={"Result from query data"}
-        ></Query>
+        ></QueryModal>
     );
 }

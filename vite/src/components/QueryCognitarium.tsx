@@ -12,7 +12,7 @@ import {
     Value,
 } from "@okp4/cognitarium-schema";
 
-import { Query } from "./Query";
+import { QueryModal } from "./Query";
 
 function onQueryResult(data?: Record<string, unknown>) {
     if (!data) return <></>;
@@ -104,11 +104,11 @@ export function QueryCognitarium({
     };
 
     return (
-        <Query
+        <QueryModal
             contractAddress={contractAddress}
             query={query}
             onQueryResult={onQueryResult}
             textButton={"Result from query data"}
-        ></Query>
+        ></QueryModal>
     );
 }
