@@ -9,6 +9,7 @@ import { InstantiateLawStone } from "./InstantiateLawStone";
 import { Query } from "./Query";
 import { QueryCognitarium } from "./QueryCognitarium";
 import { QueryLawStone } from "./QueryLawStone";
+import { Transactions } from "./Transactions";
 
 export {
     Balance,
@@ -22,4 +23,5 @@ export {
     Query,
     QueryCognitarium,
     QueryLawStone,
+    Transactions,
 };

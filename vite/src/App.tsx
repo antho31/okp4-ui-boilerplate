@@ -9,6 +9,7 @@ import {
     InstantiateLawStone,
     QueryCognitarium,
     QueryLawStone,
+    Transactions,
 } from "./components";
 
 import "./App.css";
@@ -30,6 +31,8 @@ function App() {
 
             <Connection chainInfo={OKP4TestnetChain} />
             <Balance></Balance>
+
+            <Transactions />
 
             <InstantiateCognitarium codeId={COGNITARIUM_CODE_ID} />
             <ExecuteCognitarium contractAddress="okp41mnrjmkmv2hx448qq54snt24js43nesk9esn52jzl5fv4c33w6a6smke3n2" />
