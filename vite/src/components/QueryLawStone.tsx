@@ -20,10 +20,13 @@ function onQueryResult(data: Record<string, unknown> | undefined) {
             {askResult?.answer?.success ? (
                 <div>
                     {askResult.answer.results?.map(
-                        ({ substitutions }: Result, resIndex) => (
+                        ({ substitutions }: Result, resIndex: number) => (
                             <div key={`results-${resIndex}`}>
                                 {substitutions?.map(
-                                    (substitution: Substitution, subIndex) => {
+                                    (
+                                        substitution: Substitution,
+                                        subIndex: number,
+                                    ) => {
                                         const { term }: { term: Term } =
                                             substitution;
                                         return (
