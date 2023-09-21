@@ -30,7 +30,7 @@ export function Execute({
 
         onError: (
             error: unknown,
-            data: ExecuteContractMutationArgs<Record<string, unknown>>
+            data: ExecuteContractMutationArgs<Record<string, unknown>>,
         ): void => console.error("execute error", { error, data }),
 
         onSuccess: (data: ExecuteResult) => {

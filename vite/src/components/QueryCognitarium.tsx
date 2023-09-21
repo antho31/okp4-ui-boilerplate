@@ -31,7 +31,7 @@ function onQueryResult(data?: Record<string, unknown>) {
                                 </pre>
                             </div>
                         );
-                    }
+                    },
                 )
             ) : (
                 <></>

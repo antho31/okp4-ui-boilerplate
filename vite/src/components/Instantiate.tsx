@@ -34,7 +34,7 @@ export function Instantiate({
         codeId,
         onError: (
             error: unknown,
-            data: InstantiateContractMutationArgs<Record<string, unknown>>
+            data: InstantiateContractMutationArgs<Record<string, unknown>>,
         ): void => console.error("instantiate error", { error, data }),
         onSuccess: (data: InstantiateResult) => {
             const {
@@ -53,7 +53,7 @@ export function Instantiate({
                     logs,
                     gasUsed,
                     height,
-                }
+                },
             );
         },
     });

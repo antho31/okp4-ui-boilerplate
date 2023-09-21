@@ -32,7 +32,7 @@ export function Transactions() {
         useTendermintClient("tm37");
 
     const [transactions, setTransactions] = useState<Array<DecodedTransaction>>(
-        []
+        [],
     );
 
     const query: string = account?.bech32Address
@@ -101,14 +101,14 @@ export function Transactions() {
                                     decodedTx,
                                     decodedMsgs:
                                         decodedTx.body.messages.map(
-                                            decodeTxMessage
+                                            decodeTxMessage,
                                         ),
                                     hash: toHex(hash).toUpperCase(),
                                     result,
                                     time,
                                 };
-                            }
-                        )
+                            },
+                        ),
                     );
                 console.log({ query, decodedTransactions });
 

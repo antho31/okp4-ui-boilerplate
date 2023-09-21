@@ -9,5 +9,5 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
         <GrazProvider>
             <App />
         </GrazProvider>
-    </React.StrictMode>
+    </React.StrictMode>,
 );

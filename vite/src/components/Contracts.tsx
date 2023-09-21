@@ -40,9 +40,8 @@ export function Contracts({ codeId }: { codeId: number }) {
                 await cosmWasmClient.getContracts(codeId);
             const newContracts: Contract[] = [];
             for (const contractAddr of contractAddrs) {
-                const contract: Contract = await cosmWasmClient.getContract(
-                    contractAddr
-                );
+                const contract: Contract =
+                    await cosmWasmClient.getContract(contractAddr);
                 newContracts.push(contract);
             }
             setContracts(newContracts);
@@ -54,7 +53,7 @@ export function Contracts({ codeId }: { codeId: number }) {
     useEffect(() => {
         if (!account) return;
         const userContracts: Contract[] = contracts.filter(
-            ({ creator }) => creator === account.bech32Address
+            ({ creator }) => creator === account.bech32Address,
         );
         setUserContracts(userContracts);
     }, [contracts, account]);
@@ -111,7 +110,7 @@ export function Contracts({ codeId }: { codeId: number }) {
                                                 )}
                                             </td>
                                         </tr>
-                                    )
+                                    ),
                                 )}
                             </tbody>
                         </table>

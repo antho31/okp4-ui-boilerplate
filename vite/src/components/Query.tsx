@@ -38,7 +38,7 @@ export function QueryModal({
 export function Query({ contractAddress, query, onQueryResult }: QueryProps) {
     const { data, isLoading } = useQuerySmart<Record<string, unknown>, boolean>(
         contractAddress,
-        query
+        query,
     );
 
     useEffect(() => {

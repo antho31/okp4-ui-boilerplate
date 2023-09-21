@@ -42,7 +42,7 @@ export function decodeTxMessage(message: Any) {
         return {
             typeUrl,
             value: decodeTxWasmMessageValue(
-                MsgInstantiateContract.decode(value)
+                MsgInstantiateContract.decode(value),
             ),
         };
     // For contract execution messages from the CosmWasm module
@@ -81,7 +81,7 @@ export function decodeTxMessage(message: Any) {
  * @returns An object containing the original decoded value and the further decoded `msg` field.
  */
 export function decodeTxWasmMessageValue(
-    decodedValue: MsgInstantiateContract | MsgExecuteContract
+    decodedValue: MsgInstantiateContract | MsgExecuteContract,
 ) {
     // 1: convert the 'msg' field from a UTF-8 encoded byte array into a JSON object
     const msg = JSON.parse(fromUtf8(decodedValue.msg));

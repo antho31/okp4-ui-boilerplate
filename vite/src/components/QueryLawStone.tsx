@@ -33,10 +33,10 @@ function onQueryResult(data: Record<string, unknown> | undefined) {
                                                 {term.name} can vote
                                             </div>
                                         );
-                                    }
+                                    },
                                 )}
                             </div>
-                        )
+                        ),
                     )}
                 </div>
             ) : (

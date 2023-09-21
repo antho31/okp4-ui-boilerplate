@@ -1,6 +1,6 @@
 # Web UI Boilerplates
 
-> Boilerplate to build UIs interacting with the [@okp4](https://okp4.network) protocol.
+> Boilerplates to build UIs interacting with the [@okp4](https://okp4.network) protocol.
 
 [![lint](https://img.shields.io/github/actions/workflow/status/okp4/template-oss/lint.yml?branch=main&label=lint&style=for-the-badge&logo=github)](https://github.com/okp4/template-oss/actions/workflows/lint.yml)
 [![conventional commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg?style=for-the-badge&logo=conventionalcommits)](https://conventionalcommits.org)
