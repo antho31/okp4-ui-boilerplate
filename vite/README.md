@@ -14,8 +14,7 @@ Front-end boilerplate to rapidly develop UIs for interacting with the OKP4 block
 
 ## 🛠 Prerequisites
 
-- Node.js >=14.x
-- NPM (or any alternative)
+- Node.js >=18.x
 
 ## 🖥 Get started
 
