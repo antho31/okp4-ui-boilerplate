@@ -12,7 +12,7 @@ import {
 } from "./components";
 import { Accordion } from "./ui";
 
-import "./App.css";
+import "./App.scss";
 import Banner from "./assets/okp4-banner-v2.webp";
 
 import {
