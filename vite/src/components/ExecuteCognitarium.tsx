@@ -1,7 +1,5 @@
 import { ExecuteMsg, InsertData } from "@okp4/cognitarium-schema";
-
 import { Execute } from "./Execute";
-
 import { encodeForMsgTx } from "../utils";
 
 export function ExecuteCognitarium({

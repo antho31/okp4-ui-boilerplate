@@ -6,7 +6,6 @@ import {
     Substitution,
     Term,
 } from "@okp4/law-stone-schema";
-
 import { QueryModal } from "./Query";
 
 function onQueryResult(data: Record<string, unknown> | undefined) {

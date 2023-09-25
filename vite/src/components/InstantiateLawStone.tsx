@@ -1,11 +1,8 @@
 import { useAccount } from "graz";
 import { InstantiateOptions } from "graz/dist/cosmjs";
 import { Key } from "graz/dist/keplr";
-
 import { InstantiateMsg } from "@okp4/law-stone-schema";
-
 import { Instantiate } from "./Instantiate";
-
 import { encodeForMsgTx } from "../utils";
 
 export function InstantiateLawStone({ codeId }: { codeId: number }) {

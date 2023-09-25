@@ -1,7 +1,5 @@
 import { ReactElement, useEffect, useState } from "react";
-
 import { useQuerySmart } from "graz";
-
 import Modal from "../ui/Modal";
 
 type QueryProps = {

@@ -1,9 +1,7 @@
 import { useAccount } from "graz";
 import { InstantiateOptions } from "graz/dist/cosmjs";
 import { Key } from "graz/dist/keplr";
-
 import { InstantiateMsg, StoreLimitsInput } from "@okp4/cognitarium-schema";
-
 import { Instantiate } from "./Instantiate";
 
 export function InstantiateCognitarium({ codeId }: { codeId: number }) {

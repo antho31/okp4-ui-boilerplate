@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-
 import { useAccount, useTendermintClient } from "graz";
 import { Key } from "graz/dist/keplr";
 import {
@@ -11,10 +10,8 @@ import {
     TxSearchParams,
     TxSearchResponse,
 } from "graz/dist/tendermint";
-
 import { toHex } from "@cosmjs/encoding";
 import { DecodedTxRaw, decodeTxRaw } from "@cosmjs/proto-signing";
-
 import { decodeTxMessage } from "../utils";
 
 type DecodedTransaction = {

@@ -11,7 +11,6 @@ import {
     SelectResponse,
     Value,
 } from "@okp4/cognitarium-schema";
-
 import { QueryModal } from "./Query";
 
 function onQueryResult(data?: Record<string, unknown>) {

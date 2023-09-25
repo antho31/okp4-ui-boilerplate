@@ -1,11 +1,8 @@
 import { useEffect, useState } from "react";
-
 import { useAccount, useCosmWasmClient } from "graz";
 import { Contract, CosmWasmClient } from "graz/dist/cosmjs";
 import { Key } from "graz/dist/keplr";
-
 import { ExecuteCognitarium } from "./ExecuteCognitarium";
-
 import { COGNITARIUM_CODE_ID } from "../constants";
 
 export function Contracts({ codeId }: { codeId: number }) {

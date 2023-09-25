@@ -1,5 +1,4 @@
 import { configureGraz } from "graz";
-
 import {
     Balance,
     Connection,
@@ -11,10 +10,8 @@ import {
     Transactions,
 } from "./components";
 import { Accordion } from "./ui";
-
 import "./App.scss";
 import Banner from "./assets/okp4-banner-v2.webp";
-
 import {
     COGNITARIUM_CODE_ID,
     LAWSTONE_CODE_ID,
