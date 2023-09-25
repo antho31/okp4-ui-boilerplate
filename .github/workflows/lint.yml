@@ -67,6 +67,25 @@ jobs:
             fi
           ' sh {} +
 
+  lint-ts:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v3
+
+      - name: Setup node environment (for building)
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18.18
+
+      - name: Fetch dependencies
+        run: |
+          yarn
+
+      - name: Lint typescript
+        run: |
+          yarn lint
+
   lint-branch-name:
     runs-on: ubuntu-22.04
     if: github.actor != 'dependabot[bot]' && github.event_name == 'pull_request' && (github.event.action == 'opened' || github.event.action == 'reopened')
