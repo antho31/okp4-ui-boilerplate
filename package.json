@@ -20,19 +20,22 @@
         "react-dom": "^18.2.0"
     },
     "devDependencies": {
-        "@okp4/eslint-config": "^1.2.0",
+        "@okp4/eslint-config": "^2.0.0",
         "@types/react": "^18.2.15",
         "@types/react-dom": "^18.2.7",
-        "@typescript-eslint/parser": "^6.0.0",
+        "@typescript-eslint/eslint-plugin": "^5.14.0",
+        "@typescript-eslint/parser": "^5.0.0",
         "@vitejs/plugin-react-swc": "^3.3.2",
         "autoprefixer": "^10.4.16",
         "eslint": "^8.45.0",
+        "eslint-plugin-react": "^7.33.2",
+        "eslint-plugin-react-hooks": "^4.3.0",
         "eslint-plugin-react-refresh": "^0.4.3",
         "node-stdlib-browser": "^1.2.0",
+        "sass": "^1.68.0",
         "typescript": "^5.0.2",
         "vite": "^4.4.5",
-        "vite-plugin-node-stdlib-browser": "^0.2.1",
-        "sass": "^1.68.0"
+        "vite-plugin-node-stdlib-browser": "^0.2.1"
     },
     "engines": {
         "node": "^18.18.0",

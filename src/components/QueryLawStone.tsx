@@ -1,4 +1,4 @@
-import {
+import type {
     Ask,
     AskClass,
     AskResponse,
@@ -16,12 +16,12 @@ function onQueryResult(data: Record<string, unknown> | undefined) {
     return (
         <div>
             <div>Result from rules evaluation: </div>
-            {askResult?.answer?.success ? (
+            {askResult.answer?.success ? (
                 <div>
-                    {askResult.answer.results?.map(
+                    {askResult.answer.results.map(
                         ({ substitutions }: Result, resIndex: number) => (
                             <div key={`results-${resIndex}`}>
-                                {substitutions?.map(
+                                {substitutions.map(
                                     (
                                         substitution: Substitution,
                                         subIndex: number,
@@ -60,8 +60,8 @@ export function QueryLawStone({
     return (
         <QueryModal
             contractAddress={contractAddress}
-            query={query}
             onQueryResult={onQueryResult}
+            query={query}
             textButton={"Result from query data"}
         ></QueryModal>
     );

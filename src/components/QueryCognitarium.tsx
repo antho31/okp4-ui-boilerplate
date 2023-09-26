@@ -1,4 +1,4 @@
-import {
+import type {
     PurpleTriplePattern,
     PurpleVarOrNode,
     PurpleVarOrNodeOrLiteral,
@@ -20,8 +20,8 @@ function onQueryResult(data?: Record<string, unknown>) {
 
     return (
         <div>
-            {selectResult?.results?.bindings.length ? (
-                selectResult?.results?.bindings.map(
+            {selectResult.results.bindings.length ? (
+                selectResult.results.bindings.map(
                     (res: Record<string, Value>, index: number) => {
                         return (
                             <div key={index}>
@@ -105,8 +105,8 @@ export function QueryCognitarium({
     return (
         <QueryModal
             contractAddress={contractAddress}
-            query={query}
             onQueryResult={onQueryResult}
+            query={query}
             textButton={"Result from query data"}
         ></QueryModal>
     );

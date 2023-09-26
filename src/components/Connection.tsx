@@ -5,7 +5,7 @@ import {
     useSuggestChainAndConnect,
     WalletType,
 } from "graz";
-import { ChainInfo, Key } from "graz/dist/keplr";
+import type { ChainInfo, Key } from "graz/dist/keplr";
 
 export function Connection({ chainInfo }: { chainInfo: ChainInfo }) {
     const wallets = getAvailableWallets();
