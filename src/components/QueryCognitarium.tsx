@@ -1,7 +1,7 @@
 import type {
-    PurpleTriplePattern,
-    PurpleVarOrNode,
-    PurpleVarOrNodeOrLiteral,
+    ConstructElement,
+    ConstructVarOrNode,
+    ConstructVarOrNodeOrLiteral,
     QueryPrefix,
     QueryWhere,
     Select,
@@ -64,16 +64,16 @@ export function QueryCognitarium({
         },
     ];
 
-    const subjectFilter: PurpleVarOrNode = {
+    const subjectFilter: ConstructVarOrNode = {
         variable: "subjectVar",
     };
-    const predicateFilter: PurpleVarOrNode = {
+    const predicateFilter: ConstructVarOrNode = {
         variable: "predicateVar",
     };
-    const objectFilter: PurpleVarOrNodeOrLiteral = {
+    const objectFilter: ConstructVarOrNodeOrLiteral = {
         variable: "objectVar",
     };
-    const triplePatternFilter: PurpleTriplePattern = {
+    const triplePatternFilter: ConstructElement = {
         subject: subjectFilter,
         predicate: predicateFilter,
         object: objectFilter,

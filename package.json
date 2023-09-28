@@ -12,8 +12,8 @@
     "dependencies": {
         "@cosmjs/encoding": "^0.31.1",
         "@cosmjs/proto-signing": "^0.31.1",
-        "@okp4/cognitarium-schema": "2.1.1-next.20230927075450.0",
-        "@okp4/law-stone-schema": "2.1.1-next.20230927075446.0",
+        "@okp4/cognitarium-schema": "^3.0.0",
+        "@okp4/law-stone-schema": "^3.0.0",
         "cosmjs-types": "^0.8.0",
         "graz": "^0.0.50",
         "react": "^18.2.0",
