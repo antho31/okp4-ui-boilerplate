@@ -641,10 +641,10 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
-"@okp4/cognitarium-schema@^2.1.0":
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/@okp4/cognitarium-schema/-/cognitarium-schema-2.1.0.tgz#c2fa9959692f04e695e484842bfe45417229f0aa"
-  integrity sha512-SRops6yB+TMRizAKLkXc/zvb/X7fNf+hG1rgTKZWpaVMe6InqxsFpYcY8Uak003aZ6WRhmfVnrj/5x9AjA2wZg==
+"@okp4/cognitarium-schema@2.1.1-next.20230927075450.0":
+  version "2.1.1-next.20230927075450.0"
+  resolved "https://registry.yarnpkg.com/@okp4/cognitarium-schema/-/cognitarium-schema-2.1.1-next.20230927075450.0.tgz#9c4e744feca4b5f083e27d19acbb77f7944a2d43"
+  integrity sha512-X2xXujiu/NpkC77V1ZfmVzCERp5t/gm1QzzeNA6WqPxH5E/TKmyPOnRdA5qYtiyC5jzcTWGxs1KfWKcBDvkB3g==
 
 "@okp4/eslint-config@^2.0.0":
   version "2.0.0"
@@ -655,10 +655,10 @@
     tsutils ">=3.21.0"
     typescript ">=4.6.2"
 
-"@okp4/law-stone-schema@^2.1.0":
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/@okp4/law-stone-schema/-/law-stone-schema-2.1.0.tgz#fb9ebfe272548003d55a6c02cded2106350c2a13"
-  integrity sha512-vhwFdfCUuLUhSnCQXHO5z5khyCN+tptc6pP0HQH++pLK7NGQqqeCccBDTm59E2wyV7W31ILtL+6v+UgY4B5bFw==
+"@okp4/law-stone-schema@2.1.1-next.20230927075446.0":
+  version "2.1.1-next.20230927075446.0"
+  resolved "https://registry.yarnpkg.com/@okp4/law-stone-schema/-/law-stone-schema-2.1.1-next.20230927075446.0.tgz#a3341db988e42388eaa69c24ef8475628cde7172"
+  integrity sha512-LG7xRNUo9j4nWmuOv/XHL5LRSQEoGnc5wDMCLD3uxi9RfeTft4mErQDMdvDTFU1B4Ho5Kmk9DRGVULdBSywsYA==
 
 "@protobufjs/aspromise@^1.1.1", "@protobufjs/aspromise@^1.1.2":
   version "1.1.2"
