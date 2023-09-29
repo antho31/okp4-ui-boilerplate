@@ -1,10 +1,11 @@
+import type {
+    InstantiateContractMutationArgs} from "graz";
 import {
-    InstantiateContractMutationArgs,
     useAccount,
     useCosmWasmSigningClient,
     useInstantiateContract,
 } from "graz";
-import {
+import type {
     InstantiateOptions,
     InstantiateResult,
     SigningCosmWasmClient,

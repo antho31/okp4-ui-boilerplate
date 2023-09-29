@@ -1,7 +1,7 @@
-import {
-    PurpleTriplePattern,
-    PurpleVarOrNode,
-    PurpleVarOrNodeOrLiteral,
+import type {
+    ConstructElement,
+    ConstructVarOrNode,
+    ConstructVarOrNodeOrLiteral,
     QueryPrefix,
     QueryWhere,
     Select,
@@ -20,8 +20,8 @@ function onQueryResult(data?: Record<string, unknown>) {
 
     return (
         <div>
-            {selectResult?.results?.bindings.length ? (
-                selectResult?.results?.bindings.map(
+            {selectResult.results.bindings.length ? (
+                selectResult.results.bindings.map(
                     (res: Record<string, Value>, index: number) => {
                         return (
                             <div key={index}>
@@ -64,16 +64,16 @@ export function QueryCognitarium({
         },
     ];
 
-    const subjectFilter: PurpleVarOrNode = {
+    const subjectFilter: ConstructVarOrNode = {
         variable: "subjectVar",
     };
-    const predicateFilter: PurpleVarOrNode = {
+    const predicateFilter: ConstructVarOrNode = {
         variable: "predicateVar",
     };
-    const objectFilter: PurpleVarOrNodeOrLiteral = {
+    const objectFilter: ConstructVarOrNodeOrLiteral = {
         variable: "objectVar",
     };
-    const triplePatternFilter: PurpleTriplePattern = {
+    const triplePatternFilter: ConstructElement = {
         subject: subjectFilter,
         predicate: predicateFilter,
         object: objectFilter,
@@ -105,8 +105,8 @@ export function QueryCognitarium({
     return (
         <QueryModal
             contractAddress={contractAddress}
-            query={query}
             onQueryResult={onQueryResult}
+            query={query}
             textButton={"Result from query data"}
         ></QueryModal>
     );

@@ -1,5 +1,5 @@
 import { useAccount, useBalance } from "graz";
-import { Coin } from "graz/dist/cosmjs";
+import type { Coin } from "graz/dist/cosmjs";
 
 export function Balance() {
     const { isConnected }: { isConnected: boolean } = useAccount();
@@ -16,7 +16,7 @@ export function Balance() {
                     <div>Fetching balances...</div>
                 ) : balance?.amount ? (
                     <div>
-                        Balance: {Number(balance?.amount) / 1000000} $KNOW
+                        Balance: {Number(balance.amount) / 1000000} $KNOW
                     </div>
                 ) : (
                     <div>This wallet does not hold $KNOW tokens</div>

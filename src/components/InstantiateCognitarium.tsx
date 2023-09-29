@@ -1,7 +1,7 @@
 import { useAccount } from "graz";
-import { InstantiateOptions } from "graz/dist/cosmjs";
-import { Key } from "graz/dist/keplr";
-import { InstantiateMsg, StoreLimitsInput } from "@okp4/cognitarium-schema";
+import type { InstantiateOptions } from "graz/dist/cosmjs";
+import type { Key } from "graz/dist/keplr";
+import type { InstantiateMsg, StoreLimitsInput } from "@okp4/cognitarium-schema";
 import { Instantiate } from "./Instantiate";
 
 const UINT128_MAX = "340282366920938463463374607431768211455";

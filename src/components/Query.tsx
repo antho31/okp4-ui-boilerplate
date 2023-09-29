@@ -1,4 +1,5 @@
-import { ReactElement, useEffect, useState } from "react";
+import type { ReactElement} from "react";
+import { useEffect, useState } from "react";
 import { useQuerySmart } from "graz";
 import Modal from "../ui/Modal";
 
@@ -21,11 +22,11 @@ export function QueryModal({
         <div>
             <button onClick={() => setShowModal(true)}>{textButton}</button>
 
-            <Modal showModal={showModal} setShowModal={setShowModal}>
+            <Modal setShowModal={setShowModal} showModal={showModal}>
                 <Query
                     contractAddress={contractAddress}
-                    query={query}
                     onQueryResult={onQueryResult}
+                    query={query}
                     textButton={"Result from query data"}
                 ></Query>
             </Modal>

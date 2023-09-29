@@ -1,7 +1,7 @@
 import { useAccount } from "graz";
-import { InstantiateOptions } from "graz/dist/cosmjs";
-import { Key } from "graz/dist/keplr";
-import { InstantiateMsg } from "@okp4/law-stone-schema";
+import type { InstantiateOptions } from "graz/dist/cosmjs";
+import type { Key } from "graz/dist/keplr";
+import type { InstantiateMsg } from "@okp4/law-stone-schema";
 import { Instantiate } from "./Instantiate";
 import { encodeForMsgTx } from "../utils";
 

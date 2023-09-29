@@ -1,6 +1,6 @@
 import { fromBase64, fromUtf8 } from "@cosmjs/encoding";
 
-import { Any } from "cosmjs-types/google/protobuf/any";
+import type { Any } from "cosmjs-types/google/protobuf/any";
 
 import {
     MsgExecuteContract,

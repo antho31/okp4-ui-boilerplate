@@ -26,7 +26,7 @@ function App() {
     return (
         <>
             <h1>OKP4 Vite Starter</h1>
-            <img className="logo" alt="OKP4 logo" src={Banner} />
+            <img alt="OKP4 logo" className="logo" src={Banner} />
 
             <Connection chainInfo={OKP4TestnetChain} />
 

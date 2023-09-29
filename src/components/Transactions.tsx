@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useAccount, useTendermintClient } from "graz";
-import { Key } from "graz/dist/keplr";
-import {
+import type { Key } from "graz/dist/keplr";
+import type {
     Block,
     ReadonlyDateWithNanoseconds,
     Tendermint37Client,
@@ -11,7 +11,8 @@ import {
     TxSearchResponse,
 } from "graz/dist/tendermint";
 import { toHex } from "@cosmjs/encoding";
-import { DecodedTxRaw, decodeTxRaw } from "@cosmjs/proto-signing";
+import type { DecodedTxRaw} from "@cosmjs/proto-signing";
+import { decodeTxRaw } from "@cosmjs/proto-signing";
 import { decodeTxMessage } from "../utils";
 
 type DecodedTransaction = {
@@ -54,7 +55,7 @@ export function Transactions() {
                             order_by: "desc",
                         };
                         const txSearchRes: TxSearchResponse =
-                            await tendermintClient?.txSearch(searchParams);
+                            await tendermintClient.txSearch(searchParams);
                         const { txs }: { txs: readonly TxResponse[] } =
                             txSearchRes;
                         transactionsFromRequest.push(...txs);

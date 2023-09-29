@@ -1,10 +1,11 @@
+import type {
+    ExecuteContractMutationArgs} from "graz";
 import {
-    ExecuteContractMutationArgs,
     useAccount,
     useCosmWasmSigningClient,
     useExecuteContract,
 } from "graz";
-import { ExecuteResult, SigningCosmWasmClient } from "graz/dist/cosmjs";
+import type { ExecuteResult, SigningCosmWasmClient } from "graz/dist/cosmjs";
 
 type ExecuteProps = {
     contractAddress: string;
